@@ -1,0 +1,643 @@
+{
+    "application": {
+        "dpctl": "",
+        "ipBase": "10.0.0.0/8",
+        "netflow": {
+            "nflowAddId": "0",
+            "nflowTarget": "",
+            "nflowTimeout": "600"
+        },
+        "openFlowVersions": {
+            "ovsOf10": "1",
+            "ovsOf11": "0",
+            "ovsOf12": "0",
+            "ovsOf13": "0"
+        },
+        "sflow": {
+            "sflowHeader": "128",
+            "sflowPolling": "30",
+            "sflowSampling": "400",
+            "sflowTarget": ""
+        },
+        "startCLI": "1",
+        "switchType": "ovs",
+        "terminalType": "xterm"
+    },
+    "controllers": [
+        {
+            "opts": {
+                "controllerProtocol": "tcp",
+                "controllerType": "ref",
+                "hostname": "c0",
+                "remoteIP": "127.0.0.1",
+                "remotePort": 6633
+            },
+            "x": "1792.0",
+            "y": "904.0"
+        }
+    ],
+    "hosts": [
+        {
+            "number": "14",
+            "opts": {
+                "hostname": "h14",
+                "nodeNum": 14,
+                "sched": "host"
+            },
+            "x": "1144.0",
+            "y": "199.0"
+        },
+        {
+            "number": "10",
+            "opts": {
+                "hostname": "h10",
+                "nodeNum": 10,
+                "sched": "host"
+            },
+            "x": "629.0",
+            "y": "865.0"
+        },
+        {
+            "number": "11",
+            "opts": {
+                "hostname": "h11",
+                "nodeNum": 11,
+                "sched": "host"
+            },
+            "x": "845.0",
+            "y": "795.0"
+        },
+        {
+            "number": "6",
+            "opts": {
+                "hostname": "h6",
+                "nodeNum": 6,
+                "sched": "host"
+            },
+            "x": "24.0",
+            "y": "398.0"
+        },
+        {
+            "number": "3",
+            "opts": {
+                "hostname": "h3",
+                "nodeNum": 3,
+                "sched": "host"
+            },
+            "x": "500.0",
+            "y": "161.0"
+        },
+        {
+            "number": "5",
+            "opts": {
+                "hostname": "h5",
+                "nodeNum": 5,
+                "sched": "host"
+            },
+            "x": "72.0",
+            "y": "232.0"
+        },
+        {
+            "number": "2",
+            "opts": {
+                "hostname": "h2",
+                "nodeNum": 2,
+                "sched": "host"
+            },
+            "x": "349.0",
+            "y": "103.0"
+        },
+        {
+            "number": "7",
+            "opts": {
+                "hostname": "h7",
+                "nodeNum": 7,
+                "sched": "host"
+            },
+            "x": "100.0",
+            "y": "614.0"
+        },
+        {
+            "number": "15",
+            "opts": {
+                "hostname": "h15",
+                "nodeNum": 15,
+                "sched": "host"
+            },
+            "x": "1256.0",
+            "y": "121.0"
+        },
+        {
+            "number": "12",
+            "opts": {
+                "hostname": "h12",
+                "nodeNum": 12,
+                "sched": "host"
+            },
+            "x": "624.0",
+            "y": "481.0"
+        },
+        {
+            "number": "9",
+            "opts": {
+                "hostname": "h9",
+                "nodeNum": 9,
+                "sched": "host"
+            },
+            "x": "191.0",
+            "y": "899.0"
+        },
+        {
+            "number": "13",
+            "opts": {
+                "hostname": "h13",
+                "nodeNum": 13,
+                "sched": "host"
+            },
+            "x": "908.0",
+            "y": "222.0"
+        },
+        {
+            "number": "4",
+            "opts": {
+                "hostname": "h4",
+                "nodeNum": 4,
+                "sched": "host"
+            },
+            "x": "687.0",
+            "y": "163.0"
+        },
+        {
+            "number": "16",
+            "opts": {
+                "hostname": "h16",
+                "nodeNum": 16,
+                "sched": "host"
+            },
+            "x": "430.0",
+            "y": "426.0"
+        },
+        {
+            "number": "1",
+            "opts": {
+                "hostname": "h1",
+                "nodeNum": 1,
+                "sched": "host"
+            },
+            "x": "234.0",
+            "y": "29.0"
+        },
+        {
+            "number": "8",
+            "opts": {
+                "hostname": "h8",
+                "nodeNum": 8,
+                "sched": "host"
+            },
+            "x": "163.0",
+            "y": "746.0"
+        }
+    ],
+    "links": [
+        {
+            "dest": "kanpur",
+            "opts": {},
+            "src": "delhi"
+        },
+        {
+            "dest": "gorakhpur",
+            "opts": {},
+            "src": "kanpur"
+        },
+        {
+            "dest": "allahabad",
+            "opts": {},
+            "src": "gorakhpur"
+        },
+        {
+            "dest": "kanpur",
+            "opts": {},
+            "src": "jaipur"
+        },
+        {
+            "dest": "jaipur",
+            "opts": {},
+            "src": "ahmedabad"
+        },
+        {
+            "dest": "bengaluru",
+            "opts": {},
+            "src": "kanpur"
+        },
+        {
+            "dest": "pune",
+            "opts": {},
+            "src": "mumbai"
+        },
+        {
+            "dest": "bengaluru",
+            "opts": {},
+            "src": "pune"
+        },
+        {
+            "dest": "bengaluru",
+            "opts": {},
+            "src": "chennai"
+        },
+        {
+            "dest": "bengaluru",
+            "opts": {},
+            "src": "hyderabad"
+        },
+        {
+            "dest": "chennai",
+            "opts": {},
+            "src": "hyderabad"
+        },
+        {
+            "dest": "bengaluru",
+            "opts": {},
+            "src": "trivandrum"
+        },
+        {
+            "dest": "guwhati",
+            "opts": {},
+            "src": "kolkata"
+        },
+        {
+            "dest": "kolkata",
+            "opts": {},
+            "src": "bhuv"
+        },
+        {
+            "dest": "mumbai",
+            "opts": {},
+            "src": "indore"
+        },
+        {
+            "dest": "mumbai",
+            "opts": {},
+            "src": "kanpur"
+        },
+        {
+            "dest": "kolkata",
+            "opts": {},
+            "src": "hyderabad"
+        },
+        {
+            "dest": "h1",
+            "opts": {},
+            "src": "delhi"
+        },
+        {
+            "dest": "h2",
+            "opts": {},
+            "src": "kanpur"
+        },
+        {
+            "dest": "h3",
+            "opts": {},
+            "src": "gorakhpur"
+        },
+        {
+            "dest": "h4",
+            "opts": {},
+            "src": "allahabad"
+        },
+        {
+            "dest": "h5",
+            "opts": {},
+            "src": "jaipur"
+        },
+        {
+            "dest": "h6",
+            "opts": {},
+            "src": "ahmedabad"
+        },
+        {
+            "dest": "h7",
+            "opts": {},
+            "src": "mumbai"
+        },
+        {
+            "dest": "h8",
+            "opts": {},
+            "src": "pune"
+        },
+        {
+            "dest": "h9",
+            "opts": {},
+            "src": "trivandrum"
+        },
+        {
+            "dest": "h10",
+            "opts": {},
+            "src": "bengaluru"
+        },
+        {
+            "dest": "h11",
+            "opts": {},
+            "src": "chennai"
+        },
+        {
+            "dest": "h12",
+            "opts": {},
+            "src": "hyderabad"
+        },
+        {
+            "dest": "bhuv",
+            "opts": {},
+            "src": "h13"
+        },
+        {
+            "dest": "h14",
+            "opts": {},
+            "src": "kolkata"
+        },
+        {
+            "dest": "h15",
+            "opts": {},
+            "src": "guwhati"
+        },
+        {
+            "dest": "h16",
+            "opts": {},
+            "src": "indore"
+        }
+    ],
+    "switches": [
+        {
+            "number": "5",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "5",
+                "hostname": "jaipur",
+                "netflow": "0",
+                "nodeNum": 5,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "188.0",
+            "y": "316.0"
+        },
+        {
+            "number": "1",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "1",
+                "hostname": "delhi",
+                "netflow": "0",
+                "nodeNum": 1,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "152.0",
+            "y": "120.0"
+        },
+        {
+            "number": "8",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "8",
+                "hostname": "pune",
+                "netflow": "0",
+                "nodeNum": 8,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "336.0",
+            "y": "702.0"
+        },
+        {
+            "number": "3",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "3",
+                "hostname": "gorakhpur",
+                "netflow": "0",
+                "nodeNum": 3,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "427.0",
+            "y": "331.0"
+        },
+        {
+            "number": "4",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "4",
+                "hostname": "allahabad",
+                "netflow": "0",
+                "nodeNum": 4,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "719.0",
+            "y": "298.0"
+        },
+        {
+            "number": "14",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "12",
+                "hostname": "hyderabad",
+                "netflow": "0",
+                "nodeNum": 14,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "583.0",
+            "y": "579.0"
+        },
+        {
+            "number": "9",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "10",
+                "hostname": "bengaluru",
+                "netflow": "0",
+                "nodeNum": 9,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "477.0",
+            "y": "806.0"
+        },
+        {
+            "number": "12",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "15",
+                "hostname": "guwhati",
+                "netflow": "0",
+                "nodeNum": 12,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "1634.0",
+            "y": "302.0"
+        },
+        {
+            "number": "6",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "6",
+                "hostname": "ahmedabad",
+                "netflow": "0",
+                "nodeNum": 6,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "142.0",
+            "y": "484.0"
+        },
+        {
+            "number": "11",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "14",
+                "hostname": "kolkata",
+                "netflow": "0",
+                "nodeNum": 11,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "1242.0",
+            "y": "377.0"
+        },
+        {
+            "number": "2",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "2",
+                "hostname": "kanpur",
+                "netflow": "0",
+                "nodeNum": 2,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "297.0",
+            "y": "192.0"
+        },
+        {
+            "number": "10",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "11",
+                "hostname": "chennai",
+                "netflow": "0",
+                "nodeNum": 10,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "732.0",
+            "y": "710.0"
+        },
+        {
+            "number": "15",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "16",
+                "hostname": "indore",
+                "netflow": "0",
+                "nodeNum": 15,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "357.0",
+            "y": "463.0"
+        },
+        {
+            "number": "16",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "9",
+                "hostname": "trivandrum",
+                "netflow": "0",
+                "nodeNum": 16,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "419.0",
+            "y": "926.0"
+        },
+        {
+            "number": "7",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "7",
+                "hostname": "mumbai",
+                "netflow": "0",
+                "nodeNum": 7,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "211.0",
+            "y": "594.0"
+        },
+        {
+            "number": "13",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "dpid": "13",
+                "hostname": "bhuv",
+                "netflow": "0",
+                "nodeNum": 13,
+                "sflow": "0",
+                "switchIP": "",
+                "switchType": "default"
+            },
+            "x": "1288.0",
+            "y": "537.0"
+        }
+    ],
+    "version": "2"
+}
